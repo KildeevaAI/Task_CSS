@@ -1,0 +1,30 @@
+body{
+    background-image: url('http://htmlbook.ru/files/river.jpg');
+    background-repeat: no-repeat;
+    background-size: 600px 380px;
+}
+
+#container{
+    display: flex;
+    width: 600px;
+    height: 380px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.circle{
+    width: 10px; 
+    height: 10px;
+    position:relative;
+    background: black;
+    border-radius: 50%;
+    bottom: 16px;
+    border: 2px solid white;
+    margin: 4px;
+}
+
+.circle:hover{
+    background:red;
+    box-shadow: 0px 0px 5px 3px white;
+}
