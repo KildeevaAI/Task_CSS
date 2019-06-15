@@ -1,0 +1,46 @@
+table {
+    border-collapse: collapse;  
+    overflow:hidden;
+   }
+td { 
+    border:1px solid black;
+  width: 80px; 
+  height: 80px;
+  position: relative;
+}
+
+td:before{
+    content: "";
+    position: absolute;
+    width: 83px;
+    height:1000px;
+    bottom: -400px;
+    left: 0;
+    z-index: -1;
+}
+
+td:hover::after{
+    background-color: black;
+}
+
+tr:hover{
+    background-color:rgb(250, 222, 132);
+}
+
+td:after{content: '';
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background-color: rgb(21, 127, 248);
+    margin: 0 auto;
+   
+
+}
+td:hover{
+    background: yellow;
+}
+
+td:hover:before{
+    background-color:rgb(250, 222, 132);
+}
